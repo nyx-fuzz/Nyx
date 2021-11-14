@@ -83,7 +83,7 @@ Nyx framework consists in total of the following modules.
 
 #### Fuzzer-Frontends
 
-- Spec-Fuzzer - An example fuzzer that allows to fuzz targets with highly interactive inputs such as syscalls, hypercalls, API calls, GUI interations or -of course - network applications.
+- [Spec-Fuzzer](https://github.com/nyx-fuzz/spec-fuzzer) - An example fuzzer that allows to fuzz targets with highly interactive inputs such as syscalls, hypercalls, API calls, GUI interations or -of course - network applications.
 
 
 
