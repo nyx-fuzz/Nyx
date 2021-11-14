@@ -1,6 +1,6 @@
 # Nyx
 
-This repository contains an overview of the Nyx project. The Nyx project consists of its core component, a modified version of QEMU that allows to take and reset VM snapshots thousands of times per second, a modified version of KVM to enabled nested fuzzing and Intel-PT tracing during fuzzing, as well as some auxilary tools such as Spec-Fuzzer, a fuzzer specificially designed for fuzzing complex network targets. Note that Nyx can easily be used to build fuzzers for almost anything. Despite it's name, Spec-Fuzzer is quite capable of fuzzing anything that runs inside of KVM. This includes applications, kernels and even hypervisors. 
+This repository contains an overview of the Nyx project. The Nyx project consists of its core component, a modified version of QEMU that allows to take and reset VM snapshots thousands of times per second, a modified version of KVM to enabled nested fuzzing and Intel-PT tracing during fuzzing, as well as some auxilary tools such as Spec-Fuzzer, a fuzzer specificially designed for fuzzing complex interactive targets. Spec-Fuzzer is capable of fuzzing anything that runs inside of KVM. This includes applications, kernels and even hypervisors - Nyx can be used to easily build fuzzers for almost anything.
 
 <p>
 <img align="right" width="200"  src="logo.png">
