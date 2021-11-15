@@ -6,6 +6,23 @@ This repository contains an overview of the Nyx project. The Nyx project consist
 <img align="right" width="200"  src="logo.png">
 </p>
 
+## Repositories
+
+Nyx framework consists in total of the following modules. 
+
+#### Core
+- [libnyx](https://github.com/nyx-fuzz/libnyx) - a library that you can readily use to run, snapshot and restore VMs to build your own fuzzers.
+- [packer](https://github.com/nyx-fuzz/packer) - a tool that allows to bundle and pack targets into the type of VM we mostly use for ring-3 fuzzing.
+- [QEMU-Nyx](https://github.com/nyx-fuzz/QEMU-Nyx) - a modified version of QEMU that allows to take and restore snapshot, as well as communication via shared memory and hypercalls 
+- [KVM-Nyx](https://github.com/nyx-fuzz/KVM-Nyx) - a modified version of KVM that enables Nyx's ability to use intel-PT
+- [libxdc](https://github.com/nyx-fuzz/libxdc) - the fastest intel-PT decoder in the west. Used to get coverage information from binary targets
+
+#### Fuzzer-Frontends
+
+- [Spec-Fuzzer](https://github.com/nyx-fuzz/spec-fuzzer) - An example fuzzer that allows to fuzz targets with highly interactive inputs such as syscalls, hypercalls, API calls, GUI interations or -of course - network applications.
+
+## Papers
+
 In case you use one of Nyx`s components for your work, please consider to cite our papers:
 
 
@@ -69,22 +86,6 @@ In case you use one of Nyx`s components for your work, please consider to cite o
   primaryClass={cs.CR}
 }
 ```
-
-## Repositories
-
-Nyx framework consists in total of the following modules. 
-
-#### Core
-- [libnyx](https://github.com/nyx-fuzz/libnyx) - a library that you can readily use to run, snapshot and restore VMs to build your own fuzzers.
-- [packer](https://github.com/nyx-fuzz/packer) - a tool that allows to bundle and pack targets into the type of VM we mostly use for ring-3 fuzzing.
-- [QEMU-Nyx](https://github.com/nyx-fuzz/QEMU-Nyx) - a modified version of QEMU that allows to take and restore snapshot, as well as communication via shared memory and hypercalls 
-- [KVM-Nyx](https://github.com/nyx-fuzz/KVM-Nyx) - a modified version of KVM that enables Nyx's ability to use intel-PT
-- [libxdc](https://github.com/nyx-fuzz/libxdc) - the fastest intel-PT decoder in the west. Used to get coverage information from binary targets
-
-#### Fuzzer-Frontends
-
-- [Spec-Fuzzer](https://github.com/nyx-fuzz/spec-fuzzer) - An example fuzzer that allows to fuzz targets with highly interactive inputs such as syscalls, hypercalls, API calls, GUI interations or -of course - network applications.
-
 
 
 ## Bug Reports and Contributions
