@@ -13,9 +13,9 @@ Nyx framework consists in total of the following modules.
 #### Core
 - [libnyx](https://github.com/nyx-fuzz/libnyx) - a library that you can readily use to run, snapshot and restore VMs to build your own fuzzers.
 - [packer](https://github.com/nyx-fuzz/packer) - a tool that allows to bundle and pack targets into the type of VM we mostly use for ring-3 fuzzing.
-- [QEMU-Nyx](https://github.com/nyx-fuzz/QEMU-Nyx) - a modified version of QEMU that allows to take and restore snapshot, as well as communication via shared memory and hypercalls 
-- [KVM-Nyx](https://github.com/nyx-fuzz/KVM-Nyx) - a modified version of KVM that enables Nyx's ability to use intel-PT
-- [libxdc](https://github.com/nyx-fuzz/libxdc) - the fastest intel-PT decoder in the west. Used to get coverage information from binary targets
+- [QEMU-Nyx](https://github.com/nyx-fuzz/QEMU-Nyx) - a modified version of QEMU that allows to take and restore snapshot, as well as communication via shared memory and hypercalls.
+- [KVM-Nyx](https://github.com/nyx-fuzz/KVM-Nyx) - a modified version of KVM that enables Nyx's ability to use Intel-PT.
+- [libxdc](https://github.com/nyx-fuzz/libxdc) - the fastest Intel-PT decoder in the west. Used to get coverage information from binary targets.
 
 #### Fuzzer-Frontends
 
