@@ -20,6 +20,9 @@ Nyx framework consists in total of the following modules.
 #### Fuzzer-Frontends
 
 - [Spec-Fuzzer](https://github.com/nyx-fuzz/spec-fuzzer) - An example fuzzer that allows to fuzz targets with highly interactive inputs such as syscalls, hypercalls, API calls, GUI interations or -of course - network applications.
+- [AFL++-Nyx](https://github.com/nyx-fuzz/AFLplusplus-Nyx) - An AFL++ fork that uses libnyx to enable fast snapshot-based fuzzing of arbitrary x86/x86-64 code running in QEMU-Nyx.
+
+You can find an incomplete documentation and some tutorials [here](docs/).
 
 ## Papers
 
