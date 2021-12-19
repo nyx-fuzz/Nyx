@@ -33,7 +33,7 @@ make CC=~/AFLplusplus-Nyx/packer/packer/compiler/afl-clang-fast CXX=~/AFLplusplu
 
 #### Nyx share directories
 
-Nyx expects that the target is provided in a certain format. More specifically, the target is passed as a so-called „share directory“ to a Nyx-frontend implementation. The share directory contains the target as wells as a folder containing all dependencies and other files that are copied over to the guest. But more importantly, this share directory also contains a bootstrap script (`fuzz.sh`if you are using `KVM-Nyx`otherwise `fuzz_no_pt.sh`) that is also executed right after launching the fuzzer. Both bootstrap scripts use several tools to communicate with the "outer world":
+Nyx expects that the target is provided in a certain format. More specifically, the target is passed as a so-called „share directory“ to a Nyx-frontend implementation. The share directory contains the target as well as a folder containing all dependencies and other files that are copied over to the guest. But more importantly, this share directory also contains a bootstrap script (`fuzz.sh`if you are using `KVM-Nyx`otherwise `fuzz_no_pt.sh`) that is also executed right after launching the fuzzer. Both bootstrap scripts use several tools to communicate with the "outer world":
 
 - `hcat` - this tool copies a given string to the host 
 - `hget` - this program requests a file from the host's share directory 
@@ -134,7 +134,7 @@ If you want to disable fast snapshots (except for crashes), you can simply set t
 
 Most of the common use-cases for linux userland targets are already handled by our general purpose [agent](https://github.com/nyx-fuzz/packer/blob/main/packer/linux_x86_64-userspace/src/ld_preload_fuzz.c) implementation. But in case you want to build your own agent, or write a custom harness for a specific target or you just want implement all the hypercall and shared memory communication on your own, you can use our custom harness example as a starting point for that. You can find the code [here](custom_harness/)
 
-This custom harness can be statically compiled with by gcc or clang. There is no need to use an AFL compiler, becaues this agent implements its own very basic coverage tracking by simply setting specific bytes in the "coverage" bitmap after specific branches have been covered. 
+This custom harness can be statically compiled with gcc or clang. There is no need to use an AFL compiler, because this agent implements its own very basic coverage tracking by simply setting specific bytes in the "coverage" bitmap after specific branches have been covered. 
 
 To prepare this target, we must first create a new folder that will later become the sharedir.
 
