@@ -132,7 +132,7 @@ If you want to disable fast snapshots (except for crashes), you can simply set t
 
 ### Run AFL++Nyx with a custom agent
 
-Most of the common use-cases for linux userland targets are already handled by our general purpose [agent](https://github.com/nyx-fuzz/packer/blob/main/packer/linux_x86_64-userspace/src/ld_preload_fuzz.c) implementation. But in case you want to build your own agent, or write a custom harness for a specific target or you just want implement all the hypercall and shared memory communication on your own, you can use our custom harness example as a starting point for that. 
+Most of the common use-cases for linux userland targets are already handled by our general purpose [agent](https://github.com/nyx-fuzz/packer/blob/main/packer/linux_x86_64-userspace/src/ld_preload_fuzz.c) implementation. But in case you want to build your own agent, or write a custom harness for a specific target or you just want implement all the hypercall and shared memory communication on your own, you can use our custom harness example as a starting point for that. You can find the code [here](custom_harness/)
 
 This custom harness can be statically compiled with by gcc or clang. There is no need to use an AFL compiler, becaues this agent implements its own very basic coverage tracking by simply setting specific bytes in the "coverage" bitmap after specific branches have been covered. 
 
