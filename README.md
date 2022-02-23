@@ -24,6 +24,9 @@ Nyx framework consists in total of the following modules.
 
 You can find an incomplete documentation and some tutorials [here](docs/). Or check out the [Nyx mode documentation](https://github.com/AFLplusplus/AFLplusplus/blob/stable/nyx_mode/README.md) in the AFL++ repository.
 
+## Talk
+[![FuzzConEU2020](https://img.youtube.com/vi/jkNao0SjBAA/0.jpg)](https://www.youtube.com/watch?v=jkNao0SjBAA)
+
 ## Papers
 
 In case you use one of Nyx`s components for your work, please consider to cite our papers:
