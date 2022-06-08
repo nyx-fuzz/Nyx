@@ -85,13 +85,17 @@ In case you use one of Nyx`s components for your work, please consider to cite o
   url = {https://www.usenix.org/conference/usenixsecurity21/presentation/schumilo},
 }
 
-@misc{nyxnet,
-  title={Nyx-Net: Network Fuzzing with Incremental Snapshots}, 
-  author={Sergej Schumilo and Cornelius Aschermann and Andrea Jemmett and Ali Abbasi and Thorsten Holz},
-  year={2021},
-  eprint={2111.03013},
-  archivePrefix={arXiv},
-  primaryClass={cs.CR}
+@inproceedings{ nyx-net,
+  author = {Schumilo, Sergej and Aschermann, Cornelius and Jemmett, Andrea and Abbasi, Ali and Holz, Thorsten}, 
+  title = {Nyx-Net: Network Fuzzing with Incremental Snapshots}, 
+  year = {2022}, 
+  isbn = {9781450391627}, 
+  url = {https://doi.org/10.1145/3492321.3519591}, 
+  doi = {10.1145/3492321.3519591}, 
+  booktitle = {Proceedings of the Seventeenth European Conference on Computer Systems}, 
+  keywords = {testing, software security, fuzzing}, 
+  location = {Rennes, France}, 
+  series = {EuroSys '22} 
 }
 ```
 
