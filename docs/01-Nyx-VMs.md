@@ -154,4 +154,4 @@ Another simple yet effective optimization is to avoid input writes to the file s
 python3 nyx_packer.py <...> -args `/tmp/input` -file `/tmp/input`
 ```
 
-we can use the `/dev/shm` directory for that. By doing so, we can gain a performance boost up to 2x. 
+we can use the `/dev/shm` directory for that. By doing so, we can gain a significant performance boost. 
