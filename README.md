@@ -24,7 +24,7 @@ Nyx framework consists in total of the following modules.
 - [kAFL](https://github.com/IntelLabs/kAFL) - Intel's actively mainted fork of kAFL, which now uses Nyx as its backend. kAFL is a fast coverage-guided fuzzer-frontend for Nyx written in Python3. It is great for anything that runs inside a QEMU/KVM VM — in particular x86 firmware, kernels and even full-blown operating systems. It supports all major Nyx features like Redqueen and Intel PT. 
 - [LibAFL](https://github.com/AFLplusplus/LibAFL/pull/693) - A popular fuzzing library that supports various platforms, architectures, and fuzzing modes. Nyx mode is currently WIP (as part of an ongoing *Google Summer of Code* project). 
 
-You can find an incomplete documentation and some tutorials [here](docs/). Or check out the [Nyx mode documentation](https://github.com/AFLplusplus/AFLplusplus/blob/stable/nyx_mode/README.md) in the AFL++ repository.
+You can find an incomplete documentation and some tutorials [here](docs/).
 
 ## Talk
 [![FuzzConEU2020](https://img.youtube.com/vi/jkNao0SjBAA/0.jpg)](https://www.youtube.com/watch?v=jkNao0SjBAA)
