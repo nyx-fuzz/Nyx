@@ -38,7 +38,7 @@ git clone git@github.com:nyx-fuzz/QEMU-Nyx.git
 git clone git@github.com:nyx-fuzz/packer.git
 
 cd QEMU-Nyx
-./compile_qemu_nyx.sh dynamic
+./compile_qemu_nyx.sh static
 cd -
 
 cd packer/packer
