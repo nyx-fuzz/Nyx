@@ -25,9 +25,9 @@ Nyx uses different types of snapshots. The following table briefly introduces th
 Note that the old kAFL `savevm` and qcow2 overlay snapshot format is no longer supported. 
 
 
-## Howto: Use Ubuntu 21-04 LTS as a Nyx VM image for fuzzing
+## Howto: Use Ubuntu 22-04 LTS as a Nyx VM image for fuzzing
 
-In the following section, we will present how to install and prepare a QEMU / KVM virtual machine, which we will later use as a Nyx base image for fuzzing. Like with any other virtual machine, you need to manually install and prepare everything as you would normally do. This includes installing an OS and the subsequent setup of other components (like installing specific packages). This guide provides step-by-step instructions for Ubuntu 21-04 LTS. 
+In the following section, we will present how to install and prepare a QEMU / KVM virtual machine, which we will later use as a Nyx base image for fuzzing. Like with any other virtual machine, you need to manually install and prepare everything as you would normally do. This includes installing an OS and the subsequent setup of other components (like installing specific packages). This guide provides step-by-step instructions for Ubuntu 22-04 LTS. 
 
 **Note**: If you want to use the packer utility to prepare the target, use the same Linux distribution (including the same version of it) as on the host system to avoid issues with different library versions. The following guide can also be applied to other Linux distributions.
 
