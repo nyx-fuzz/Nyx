@@ -43,7 +43,7 @@ cd -
 
 cd packer/packer
 # run the following command once to create a nyx.ini config file
-python3 python nyx_packer.py > /dev/null 
+python3 nyx_packer.py > /dev/null 
 cd -
 
 # run the following commands to compile the agent (more on that later)
